@@ -263,3 +263,15 @@ libraries = {
 "": SubResource("AnimationLibrary_ovvq7")
 }
 autoplay = "move"
+
+[node name="coin" parent="." instance=ExtResource("4_3d1n7")]
+position = Vector2(753, -21)
+
+[node name="coin2" parent="." instance=ExtResource("4_3d1n7")]
+position = Vector2(770, -19)
+
+[node name="coin3" parent="." instance=ExtResource("4_3d1n7")]
+position = Vector2(786, -20)
+
+[node name="coin4" parent="." instance=ExtResource("4_3d1n7")]
+position = Vector2(584, -104)
