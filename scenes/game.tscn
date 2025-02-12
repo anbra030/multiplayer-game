@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b5efyn81uwsr3"]
+[gd_scene load_steps=14 format=3 uid="uid://b5efyn81uwsr3"]
 
 [ext_resource type="PackedScene" uid="uid://ciqwscmcsyeou" path="res://scenes/player.tscn" id="1_biicl"]
 [ext_resource type="PackedScene" uid="uid://dehs0dfhbrtjd" path="res://scenes/platform.tscn" id="2_bahap"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bfrdo0ststgoq" path="res://scenes/coin.tscn" id="4_3d1n7"]
 [ext_resource type="PackedScene" uid="uid://dbire0lcjvfd5" path="res://scenes/killzone.tscn" id="5_tvdsl"]
 [ext_resource type="PackedScene" uid="uid://bd3oja1ei7uyp" path="res://scenes/slime.tscn" id="6_ebq6u"]
+[ext_resource type="FontFile" uid="uid://bxco1gtw4htj2" path="res://assets/fonts/PixelOperator8.ttf" id="7_anen5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yakhc"]
 texture = ExtResource("2_ifijd")
@@ -282,3 +283,35 @@ autoplay = "move"
 
 [node name="slime" parent="." instance=ExtResource("6_ebq6u")]
 position = Vector2(529, 80)
+
+[node name="labels" type="Node" parent="."]
+
+[node name="Label1" type="Label" parent="labels"]
+offset_left = -97.0
+offset_top = 31.0
+offset_right = -8.0
+offset_bottom = 54.0
+theme_override_colors/font_color = Color(0.00784314, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("7_anen5")
+theme_override_font_sizes/font_size = 8
+text = "space to jump"
+
+[node name="Label2" type="Label" parent="labels"]
+offset_left = 375.0
+offset_top = 82.0
+offset_right = 470.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.00784314, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("7_anen5")
+theme_override_font_sizes/font_size = 8
+text = "falling hurts..."
+
+[node name="Label3" type="Label" parent="labels"]
+offset_left = 704.0
+offset_top = -41.0
+offset_right = 798.0
+offset_bottom = -18.0
+theme_override_colors/font_color = Color(0.00784314, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("7_anen5")
+theme_override_font_sizes/font_size = 8
+text = "almost there..."
